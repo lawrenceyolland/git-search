@@ -1,6 +1,19 @@
 import React, { Component } from "react";
 
 class Repo extends Component {
+  constructor() {
+    super();
+    this.state = {
+      likes: 0
+    };
+  }
+
+  handleClick = () => {
+    this.setState({
+      likes: this.state.likes + 1
+    });
+  };
+
   iconClass = data => {
     if (data !== null) return `devicon-${data.toLowerCase()}-plain`;
   };
@@ -27,6 +40,10 @@ class Repo extends Component {
           {language !== null ? " " + language : "unknown"}
         </i>
         {/* <span>F-{forks} W-{watchers_count} S-{stargazers_count}</span> */}
+        <button className="like-btn" onClick={this.handleClick}>
+          <i class="fa fa-heart" aria-hidden="true" /> Likes:
+          <span> {this.state.likes}</span>
+        </button>
       </div>
     );
   }
