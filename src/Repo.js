@@ -17,6 +17,7 @@ class Repo extends Component {
   iconClass = data => {
     if (data !== null) return `devicon-${data.toLowerCase()}-plain`;
   };
+  
   render() {
     const {
       html_url,

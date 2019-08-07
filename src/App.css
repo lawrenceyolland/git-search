@@ -71,7 +71,7 @@ ul {
   position: relative;
   text-align: center;
   padding: 1rem;
-  width: 50vh;
+  width: 200px;
   height: 200px;
   display: inline-grid;
   margin: 0 10px 50px 0;
@@ -83,7 +83,7 @@ ul {
   font-size: 18px !important;
   background-color: white;
   border: none;
-  transition: all .2s ease-in-out; 
+  transition: all 0.2s ease-in-out;
 }
 
 .fa-heart {
@@ -91,6 +91,6 @@ ul {
 }
 
 .fa-heart:hover {
-  color: #F9009A;
-  transform: scale(1.2); 
+  color: #f9009a;
+  transform: scale(1.2);
 }
