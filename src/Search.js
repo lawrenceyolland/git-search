@@ -11,7 +11,7 @@ class Search extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const {query} = this.state
+    const { query } = this.state;
     if (!query || !query.trim()) {
       console.log("empty string");
     } else {
