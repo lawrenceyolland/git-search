@@ -1,3 +1,3 @@
 # Testing out the Github API with React.
 
-Simple search function for users and repositories on GitHub.
+Simple search function to browse users and repositories on GitHub.
